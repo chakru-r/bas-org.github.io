@@ -20,12 +20,12 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
         
-      - name: Build
-        uses: actions/jekyll-build-pages@v1
+      - name: Build Jekyll site
+        uses: fabacab/jekyll-builder-for-github-pages-action@v1 
         with:
-          destination: "./pr-preview"
+          jekyll_build_opts: --baseurl pr-preview/$${{ github.event.pull_request.number }}
   
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: ./pr-preview
+          source-dir: ./_site
