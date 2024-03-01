@@ -5,7 +5,7 @@ tagline:
 ---
 
 
-Welcome to the Bangalore Astronomical Society.
+Welcome to the Bangalore Astronomical Society.  Test234
 
 ![](assets/images/bas_yelagiri_jan_2013_480.jpg)
 
