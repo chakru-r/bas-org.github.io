@@ -17,10 +17,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Build Jekyll site
-        uses: fabacab/jekyll-builder-for-github-pages-action@v1 
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+        
+      - name: Build
+        uses: actions/jekyll-build-pages@v1
+        with:
+          destination: "./pr-preview"
   
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: ./site
+          source-dir: ./pr-preview
