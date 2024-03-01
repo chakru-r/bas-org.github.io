@@ -1,8 +1,17 @@
----
-# Remember to set production_url in your _config.yml file!
-title : Sitemap
----
-{% for page in site.pages %}
-{{site.production_url}}{{ page.url }}{% endfor %}
-{% for post in site.posts %}
-{{site.production_url}}{{ post.url }}{% endfor %}
+
+http://bas-org.github.io/archive
+http://bas-org.github.io/atom.xml
+http://bas-org.github.io/categories
+http://bas-org.github.io/
+http://bas-org.github.io/pages
+http://bas-org.github.io/rss.xml
+http://bas-org.github.io/sitemap.txt
+http://bas-org.github.io/tags
+http://bas-org.github.io/assets/css/style.css
+
+http://bas-org.github.io/article/2024/02/26/Challakere-event
+http://bas-org.github.io/article/2024/02/26/AmritaEvent
+http://bas-org.github.io/2024/02/25/NSD-IIA-Event
+http://bas-org.github.io/article/2015/11/27/do-it-yourself-dew-heater
+http://bas-org.github.io/article/2015/11/27/buying-a-telescope
+http://bas-org.github.io/article/2015/11/12/beginning-with-binoculars
